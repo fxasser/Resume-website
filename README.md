@@ -1,2 +1,22 @@
 # Resume-website
-Repo for progress on the development of my resume website. This website serevs as a platform to extensively share and document any projects, skills, personal information, education history, and possibly more in an organized professional format.
+Repo for progress on the development of my resume website.
+This website serevs as a clean and digestable platform to share and document any projects, skills, education, and possibly more in an organized professional format.
+
+Will soon be live! (self-hosted on Ubuntu + Nginx)
+
+# Tech Stack
+- HTML 5 + CSS3
+ - Light Javascript planned
+
+# Running locally
+1. Clone: git clone https://github.com/fxasser/Resume-website
+2. Open folder in editor
+3. Use **Live Server** extension  
+4. Open http://localhost:8080 in your browser
+
+# Folder Structure
+index.html
+css/style.css
+images/CoverPhoto.png
+.gitignore
+README.md
