@@ -4,30 +4,61 @@
     <meta charset="UTF-8"> 
     <title>Home</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
   </head>
-  <body>
+<body>
     <header>
       <div class="center">
         <h1>Yasser Mohamed</h1>
         <div class="circular picture">
-          <img src="images/CoverPhoto.png" alt="omg it's me!" width="200" height="200">
-        </div>
-      </div>
+          <img src="assets/images/CoverPhoto.png" alt="omg it's me!" width="200" height="200">
     </header>
 
+    <div class="icons">
+       <a href="mailto:fxassermohamed@gmail.com"><img src="assets/icons/envelope-fill.svg" alt="Email me here!" style="width:30px;height:30px;"></a>
+      <a href="https://github.com/fxasser"><img src="assets/icons/github.svg" alt="Check out my Githib!" style="width:30px;height:30px;"></a>
+      <a href="https://www.linkedin.com/in/fxasser/"><img src="assets/icons/linkedin.svg" alt="Connect with me on LinkedIn!" style="width:30px;height:30px;"></a>
+      <a href="tel:919-756-0816"><img src="assets/icons/telephone-fill.svg" alt="Give me a call here!" style="width:30px;height:30px;"></a>
+    </div>
+    
     <main>
       <div class="center">
         <hr/>
-        <h4>Below are the main things I want to show on my page</h4>
+        <h4>Welcome! My name is Yasser, I am a Computer Science undergrad who loves to create, and to find more ways to create.</h4>
         <hr/>
 
-          <!-- TODO: replace links with dropdown menus -->
-          <nav>
-            <div class="bordered-text"><a href="projects.html">Projects</a></div>
-            <div class="bordered-text"><a href="certifications.html">Certifications</a></div>
-            <div class="bordered-text"><a href="skills.html">Skills</a></div>
-            <div class="bordered-text"><a href="more.html">More</a></div>
-        </div>
+          <section class="dropdowns">
+  <div class="dropdown">
+  <button class="dropdown-btn" aria-expanded="false">
+    Projects
+  </button>
+  <div class="dropdown-panel" hidden>
+    <p>Highlights of my recent builds and experiments.</p>
+    <a href="projects.html">View all projects →</a>
+  </div>
+</div>
+
+  <div class="dropdown">
+  <button class="dropdown-btn" aria-expanded="false">
+    Skills
+  </button>
+  <div class="dropdown-panel" hidden>
+    <p>Highlights of my recent builds and experiments.</p>
+    <a href="projects.html">View all projects →</a>
+  </div>
+</div>
+
+  <div class="dropdown">
+  <button class="dropdown-btn" aria-expanded="false">
+    Education
+  </button>
+  <div class="dropdown-panel" hidden>
+    <p>Highlights of my recent builds and experiments.</p>
+    <a href="projects.html">View all projects →</a>
+  </div>
+</div>
+
+</section>
       </div>
     </main>
   </body>
