@@ -1,10 +1,11 @@
+/* Set the primary color scheme for the website */
 :root {
   --bg: #2d241f;
   --text: #f8f5f2;
   --accent: #bdd5ef;
   --link: #f8f5f2;
 }
-
+/** Sets the primary stlying for the body section, including colors, font, and margins */
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -13,26 +14,37 @@ body {
   margin: 0;
 }
 
+/* Styles the anchor links */
 a { color: var(--link); text-decoration: none; }
 
 a:hover { color: var(--accent); }
 
+/* Sets necessary elements to a centered alingment */
 .center { text-align: center; }
 
-.bordered-text {
+/* Creeates a border around the passed text, with the specificied variables */
+/*.bordered-text {
     border: 2px solid var(--text);
     padding: .75em 1.25em;
     margin: 1em 1em;
     display:inline-block;
     border-radius: .25em;
-  /*background: rgba(248,245,242,0.05); */
-}
+  /* background: rgba(248,245,242,0.05); */
+/*
+} */
 
+/* Turns an image into a circle */
 .circular img {
   border-radius: 50%;
 }
 
-hr {
+/* Sets the fill color for SVG icons */
+.svg-color {
+  fill: var(--text);
+}
+
+/* Styles a horizontal rule element used specifically by the intro text */
+.intro-hr {
   display: block;
   height: 1px;
   width: 512px;
@@ -40,4 +52,110 @@ hr {
   border-top: 1px solid var(--text);
   margin: .75em auto;
   padding: 0;
+}
+/* Turns the passed text into a button that opens a drop-down menu when clicked  */
+.dropdowns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+/* Card stays fixed height; panel will overlay outside it */
+.dropdown {
+  position: relative;
+  flex: 1 1 260px;
+  max-width: 320px;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  overflow: visible;
+}
+
+/* Sets styling for .dropdowns */
+.dropdown-btn {
+  width: 100%;
+  text-align: left;
+  background: var(--bg);
+  color: var(--text);
+  padding: 12px 16px;
+  font-size: 1.05rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sliding panel for .dropdowns, positioned below the card */
+.dropdown-panel {
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: calc(100% + 8px);
+  padding: 12px 16px;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity .25s ease, transform .25s ease;
+  z-index: 5;
+}
+
+/* Visible state for .dropdown-panel */
+.dropdown.open .dropdown-panel {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Links inside panel */
+.dropdown-panel a {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--link);
+  text-decoration: none;
+}
+.dropdown-panel a:hover { color: var(--accent); }
+
+/* Dropdown button hover effect */
+.dropdown-btn:hover {
+  background-color: #8f6a4b;
+}
+
+
+/* Links inside dropdown content */
+.dropdown-content a {
+  display: block;
+  color: var(--link);
+  margin: 8px 0;
+}
+
+/* Active state for dropdowns */
+.dropdown.active .dropdown-content {
+  max-height: 200px;
+  padding: 15px 20px;
+}
+
+/* Hover effect for dropdowns */
+.dropdown:hover .dropdown-content {
+  max-height: 200px;
+  padding: 15px 20px;
+}
+
+/* Adds a small margin between social icons, and centers them */
+.icons{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:.5rem;
+  margin:.5rem auto;
+}
+
+
+/* Constrain the blurb and hr to same width */
+.blurb{ max-width:75ch; margin:1rem auto; text-align:center; }
+.blurb hr{
+  width:100%;
+  border:0;
+  border-top:1px solid var(--text);
+  margin:.75em 0;
 }
