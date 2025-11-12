@@ -17,6 +17,6 @@ This website serevs as a clean and digestable platform to share and document any
 ## Folder Structure
 index.html
 css/style.css
-images/
+assets/images/CoverPhoto.png
 .gitignore
 README.md
