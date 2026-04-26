@@ -55,7 +55,7 @@ img {
 
 /* ===== Hero ===== */
 .hero {
-  padding: 3.5rem 1.25rem 2rem;
+  padding: 3rem 1.25rem 1.5rem;
 }
 
 .hero__content {
@@ -65,9 +65,9 @@ img {
 }
 
 .hero__photo {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 1.1rem;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 1rem;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(189, 213, 239, 0.65);
@@ -76,15 +76,15 @@ img {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.1rem, 4vw, 3rem);
-  line-height: 1.1;
+  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  line-height: 1.05;
 }
 
 .hero__tagline {
   max-width: 42rem;
-  margin: 1rem auto 0;
+  margin: 0.85rem auto 0;
   color: var(--muted);
-  font-size: 1.1rem;
+  font-size: 1.08rem;
 }
 
 /* ===== Social Icons ===== */
@@ -92,38 +92,38 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.65rem;
-  margin: 1.2rem auto 0;
+  gap: 0.6rem;
+  margin: 1rem auto 0;
 }
 
 .icons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.65rem;
-  height: 2.65rem;
+  width: 2.55rem;
+  height: 2.55rem;
   border-radius: 999px;
   background: var(--panel);
   border: 1px solid rgba(189, 213, 239, 0.18);
   transition:
-    transform 0.18s ease,
-    border-color 0.18s ease,
-    background 0.18s ease;
+    transform 0.16s ease,
+    border-color 0.16s ease,
+    background 0.16s ease;
 }
 
 .icons a:hover {
-  transform: translateY(-2px);
-  border-color: rgba(189, 213, 239, 0.45);
+  transform: translateY(-1px);
+  border-color: rgba(189, 213, 239, 0.4);
   background: var(--panel-strong);
 }
 
 /* ===== Main Layout ===== */
 .main-content {
-  padding: 0 1.25rem 4rem;
+  padding: 0 1.25rem 3.25rem;
 }
 
 .section {
-  margin-top: 1.25rem;
+  margin-top: 0.9rem;
 }
 
 .section__inner {
@@ -136,12 +136,26 @@ img {
 }
 
 .section-heading {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .section-heading h2 {
   margin: 0;
-  font-size: 1.85rem;
+  font-size: 1.9rem;
+  line-height: 1.15;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.section-heading h2::after {
+  content: "";
+  display: block;
+  width: 2.2rem;
+  height: 2px;
+  margin-top: 0.35rem;
+  background: rgba(189, 213, 239, 0.5);
+  border-radius: 999px;
 }
 
 .section-heading p {
@@ -154,12 +168,12 @@ img {
 .intro-text {
   margin: 0;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   color: var(--text);
 }
 
 .section-rule {
-  margin: 0.95rem auto;
+  margin: 0.85rem auto;
   border: 0;
   border-top: 1px solid rgba(248, 245, 242, 0.72);
 }
@@ -167,8 +181,8 @@ img {
 /* ===== Shared Cards ===== */
 .card-grid {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .card-grid.two-up {
@@ -179,15 +193,15 @@ img {
   background: var(--panel);
   border: 1px solid rgba(189, 213, 239, 0.18);
   border-radius: 18px;
-  padding: 1.15rem 1.2rem;
+  padding: 1.05rem 1.1rem;
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(2px);
 }
 
 .card h3 {
   margin: 0 0 0.45rem;
-  font-size: 1.25rem;
-  line-height: 1.25;
+  font-size: 1.2rem;
+  line-height: 1.22;
 }
 
 .card p {
@@ -229,17 +243,17 @@ img {
 /* ===== Project Cards ===== */
 .project-card {
   transition:
-    transform 0.18s ease,
-    border-color 0.18s ease,
-    box-shadow 0.18s ease,
-    background 0.18s ease;
+    transform 0.16s ease,
+    border-color 0.16s ease,
+    box-shadow 0.16s ease,
+    background 0.16s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(189, 213, 239, 0.35);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
-  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+  border-color: rgba(189, 213, 239, 0.3);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+  background: rgba(255, 255, 255, 0.045);
 }
 
 /* Pills for project status/type */
@@ -294,17 +308,19 @@ img {
 .skill-card {
   text-align: center;
   transition:
+    transform 0.18s ease,
     border-color 0.18s ease,
     background 0.18s ease,
     box-shadow 0.18s ease;
 }
 
 .skill-card:hover {
-  border-color: rgba(189, 213, 239, 0.28);
-  background: rgba(255, 255, 255, 0.045);
+  transform: translateY(-1px);
+  border-color: rgba(189, 213, 239, 0.3);
+  background: rgba(255, 255, 255, 0.048);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.05),
-    0 14px 34px rgba(0, 0, 0, 0.16);
+    0 12px 26px rgba(0, 0, 0, 0.14);
 }
 
 .skill-card h3 {
@@ -324,6 +340,20 @@ img {
 /* ===== Education ===== */
 .education-card {
   text-align: left;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-1px);
+  border-color: rgba(189, 213, 239, 0.28);
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 12px 26px rgba(0, 0, 0, 0.13);
 }
 
 .education-card h3 {
