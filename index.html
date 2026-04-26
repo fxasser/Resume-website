@@ -2,113 +2,241 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Home</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Yasser Mohamed | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="center">
-        <h1>Yasser Mohamed</h1>
-        <div class="circular picture">
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__content">
           <img
+            class="hero__photo"
             src="assets/images/CoverPhoto.png"
-            alt="omg it's me!"
+            alt="Portrait of Yasser Mohamed"
             width="200"
             height="200"
           />
+
+          <h1>Yasser Mohamed</h1>
+
+          <p class="hero__tagline">
+            Computer Science undergraduate who loves building polished,
+            practical software and finding new ways to create.
+          </p>
+
+          <div class="icons" aria-label="Social links">
+            <a href="mailto:fxassermohamed@gmail.com" aria-label="Email">
+              <img
+                src="assets/icons/envelope-fill.svg"
+                alt=""
+                width="30"
+                height="30"
+              />
+            </a>
+            <a href="https://github.com/fxasser" aria-label="GitHub">
+              <img
+                src="assets/icons/github.svg"
+                alt=""
+                width="30"
+                height="30"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/fxasser/"
+              aria-label="LinkedIn"
+            >
+              <img
+                src="assets/icons/linkedin.svg"
+                alt=""
+                width="30"
+                height="30"
+              />
+            </a>
+            <a href="tel:919-756-0816" aria-label="Phone">
+              <img
+                src="assets/icons/telephone-fill.svg"
+                alt=""
+                width="30"
+                height="30"
+              />
+            </a>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <div class="icons">
-      <a href="mailto:fxassermohamed@gmail.com">
-        <img
-          src="assets/icons/envelope-fill.svg"
-          alt="Email me here!"
-          style="width:30px;height:30px;"
-        />
-      </a>
-      <a href="https://github.com/fxasser">
-        <img
-          src="assets/icons/github.svg"
-          alt="Check out my GitHub!"
-          style="width:30px;height:30px;"
-        />
-      </a>
-      <a href="https://www.linkedin.com/in/fxasser/">
-        <img
-          src="assets/icons/linkedin.svg"
-          alt="Connect with me on LinkedIn!"
-          style="width:30px;height:30px;"
-        />
-      </a>
-      <a href="tel:919-756-0816">
-        <img
-          src="assets/icons/telephone-fill.svg"
-          alt="Give me a call here!"
-          style="width:30px;height:30px;"
-        />
-      </a>
-    </div>
-
-    <main>
-      <div class="blurb">
-        <hr />
-        <h3>
-          Welcome! My name is Yasser, I am a Computer Science undergrad who
-          loves to create, and to find more ways to create.
-        </h3>
-        <hr />
-      </div>
-
-      <section class="dropdowns">
-          <div class="dropdown">
-            <button class="dropdown-btn" aria-expanded="false">Projects</button>
-            <div class="dropdown-panel" hidden>
-              <p>Highlights of my recent builds and experiments</p>
-              <!-- <a href="projects.html">View all projects →</a> -->
-          <img
-          src="assets/icons/wrench.svg"
-          alt="Under Construction!"
-          style="width:30px;height:30px;"
-        />
-          <p>Under Construction!</p>
-            </div>
+      <main class="main-content">
+        <section class="section intro">
+          <div class="section__inner narrow">
+            <hr class="section-rule" />
+            <p class="intro-text">
+              Welcome! I’m Yasser, a computer science student who enjoys
+              building projects that feel both technically solid and polished to
+              use.
+            </p>
+            <hr class="section-rule" />
           </div>
+        </section>
 
-          <div class="dropdown">
-            <button class="dropdown-btn" aria-expanded="false">Skills</button>
-            <div class="dropdown-panel" hidden>
-              <p>Self assesment of my personal skills</p>
-              <!-- <a href="projects.html">View all projects →</a> -->
-               <img
-          src="assets/icons/wrench.svg"
-          alt="Under Construction!"
-          style="width:30px;height:30px;"
-        />
-          <p>Under Construction!</p>
+        <section class="section">
+          <div class="section__inner">
+            <div class="section-heading">
+              <h2>Featured Projects</h2>
+              <p>
+                A few highlights that show how I like to build, present, and
+                ship my work.
+              </p>
             </div>
-          </div>
-            </div>
-          </div>
 
-          <div class="dropdown">
-            <button class="dropdown-btn" aria-expanded="false">Education</button>
-            <div class="dropdown-panel" hidden>
-              <p>My relevant course and education history</p>
-              <!-- <a href="projects.html">View all projects →</#a> -->
-                <img
-          src="assets/icons/wrench.svg"
-          alt="Under Construction!"
-          style="width:30px;height:30px;"
-        />
-          <p>Under Construction!</p>
-            </div>
-          </div>
+            <div class="card-grid">
+              <article class="card project-card">
+                <div class="card__top">
+                  <h3>AccessControlManager</h3>
+                  <span class="badge badge--live">Live Demo</span>
+                </div>
+
+                <p>
+                  Java-based access control compliance analyzer with a live web
+                  demo. Built to present a school project in a clean,
+                  employer-facing way while keeping the coursework repository
+                  private.
+                </p>
+
+                <ul class="tag-list" aria-label="Project technologies">
+                  <li>Java</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Web Hosting</li>
+                </ul>
+
+                <div class="card__links">
+                  <a
+                    href="https://accesscontrolmanager.fxasser.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View live demo →
+                  </a>
+                  <p class="note">
+                    Source is private due to course policy; available to
+                    employers upon request.
+                  </p>
+                </div>
+              </article>
+
+              <article class="card project-card">
+                <div class="card__top">
+                  <h3>Resume Website</h3>
+                  <span class="badge">Personal Site</span>
+                </div>
+
+                <p>
+                  The portfolio website you are viewing now. Designed and hosted
+                  as a lightweight personal site to present projects, education,
+                  and technical interests in a clean format.
+                </p>
+
+                <ul class="tag-list" aria-label="Project technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>GitHub</li>
+                  <li>Custom Hosting</li>
+                </ul>
+
+                <div class="card__links">
+                  <a
+                    href="https://fxasser.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View website →
+                  </a>
+                  <a
+                    href="https://github.com/fxasser/Resume-website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View repository →
+                  </a>
+                </div>
+              </article>
+
+              <article class="card placeholder-card">
+                <div class="card__top">
+                  <h3>More Projects Coming Soon</h3>
+                  <span class="badge badge--wip">In Progress</span>
+                </div>
+
+                <p>
+                  I’m continuing to expand this portfolio with additional
+                  projects, coursework highlights, and polished writeups.
+                </p>
+              </article>
             </div>
           </div>
         </section>
-    </main>
+
+        <section class="section">
+          <div class="section__inner">
+            <div class="section-heading">
+              <h2>Skills</h2>
+              <p>
+                Tools and technologies I am most comfortable building with right
+                now.
+              </p>
+            </div>
+
+            <div class="card-grid two-up">
+              <article class="card">
+                <h3>Languages</h3>
+                <ul class="simple-list">
+                  <li>Java</li>
+                  <li>C++</li>
+                  <li>JavaScript</li>
+                  <li>HTML / CSS</li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <h3>Tools & Platforms</h3>
+                <ul class="simple-list">
+                  <li>Git / GitHub</li>
+                  <li>Docker</li>
+                  <li>Linux</li>
+                  <li>VS Code</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__inner">
+            <div class="section-heading">
+              <h2>Education</h2>
+              <p>My current academic background and relevant focus areas.</p>
+            </div>
+
+            <article class="card education-card">
+              <h3>North Carolina State University</h3>
+              <p class="education-subtitle">
+                Computer Science Undergraduate
+              </p>
+              <p>
+                Focused on software development, core CS fundamentals, and
+                building technical projects that can be presented clearly and
+                professionally.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
