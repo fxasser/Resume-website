@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yasser Mohamed | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/script.js" defer></script>
@@ -25,8 +22,8 @@
           <h1>Yasser Mohamed</h1>
 
           <p class="hero__tagline">
-            Computer Science undergraduate who loves building polished,
-            practical software and finding new ways to create.
+            Computer Science undergraduate focused on Java, backend
+            development, and polished technical projects with real deployment.
           </p>
 
           <div class="icons" aria-label="Social links">
@@ -87,8 +84,8 @@
             <div class="section-heading">
               <h2>Featured Projects</h2>
               <p>
-                A few highlights that show how I like to build, present, and
-                ship my work.
+                Projects that best reflect how I build, present, and deploy
+                software.
               </p>
             </div>
 
@@ -96,22 +93,25 @@
               <article class="card project-card">
                 <div class="card__top">
                   <h3>AccessControlManager</h3>
-                  <span class="badge badge--live">Live Demo</span>
+                  <span class="badge badge--featured">EMR Demo</span>
                 </div>
 
                 <p>
-                  Java-based access control compliance analyzer with a live web
-                  demo. Built to present a school project in a clean,
-                  employer-facing way while keeping the coursework repository
-                  private.
+                  Java-based access-control compliance analyzer for electronic medical
+                  record workflows. Evaluates user activity logs against explicit
+                  allow/deny policy rules, flags likely violations, and surfaces warnings
+                  when behavior is not clearly authorized.
                 </p>
 
                 <ul class="tag-list" aria-label="Project technologies">
                   <li>Java</li>
+                  <li>Spring Boot</li>
+                  <li>REST API</li>
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
-                  <li>Web Hosting</li>
+                  <li>Nginx</li>
+                  <li>HTTPS</li>
                 </ul>
 
                 <div class="card__links">
@@ -122,31 +122,43 @@
                   >
                     View live demo →
                   </a>
+                  <a
+                    href="https://github.com/fxasser/accesscontrolmanager-demo-frontend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View public frontend repo →
+                  </a>
                   <p class="note">
-                    Source is private due to course policy; available to
-                    employers upon request.
+                    Core coursework implementation remains private due to course policy.
+                    Additional architecture and implementation details are available upon request.
                   </p>
                 </div>
               </article>
 
               <article class="card project-card">
                 <div class="card__top">
-                  <h3>Resume Website</h3>
-                  <span class="badge">Personal Site</span>
+                  <h3>Home Server &amp; Self-Hosted Infrastructure</h3>
+                  <span class="badge">Infrastructure</span>
                 </div>
 
                 <p>
-                  The portfolio website you are viewing now. Designed and hosted
-                  as a lightweight personal site to present projects, education,
-                  and technical interests in a clean format.
+                  Built and maintain an Ubuntu home server environment for hosting and
+                  managing multiple services. Configured reverse proxies, HTTPS, DNS,
+                  firewall rules, and containerized deployments for tools including
+                  Immich, Pi-hole, and VS Code Server while supporting reliable remote
+                  development and troubleshooting infrastructure issues.
                 </p>
 
                 <ul class="tag-list" aria-label="Project technologies">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>GitHub</li>
-                  <li>Custom Hosting</li>
+                  <li>Ubuntu</li>
+                  <li>Docker</li>
+                  <li>Nginx</li>
+                  <li>TLS / HTTPS</li>
+                  <li>DNS</li>
+                  <li>Pi-hole</li>
+                  <li>Immich</li>
+                  <li>VS Code Server</li>
                 </ul>
 
                 <div class="card__links">
@@ -155,31 +167,47 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View website →
+                    View live site →
                   </a>
-                  <a
-                    href="https://github.com/fxasser/Resume-website"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View repository →
-                  </a>
+                  <p class="note">
+                    This server also powers my portfolio deployment and other self-hosted
+                    tools used for development, storage, and network services.
+                  </p>
                 </div>
               </article>
 
-              <article class="card placeholder-card">
+              <article class="card project-card">
                 <div class="card__top">
-                  <h3>More Projects Coming Soon</h3>
-                  <span class="badge badge--wip">In Progress</span>
+                  <h3>Graph Algorithms &amp; Data Structures Library</h3>
+                  <span class="badge">Java Library</span>
                 </div>
 
                 <p>
-                  I’m continuing to expand this portfolio with additional
-                  projects, coursework highlights, and polished writeups.
+                  Built a cohesive Java DS&amp;A toolkit from scratch over a full semester,
+                  culminating in reusable graph analysis utilities including DFS, BFS,
+                  Dijkstra shortest paths, and minimum spanning tree algorithms powered by
+                  custom underlying data structures.
                 </p>
+
+                <ul class="tag-list" aria-label="Project technologies">
+                  <li>Java</li>
+                  <li>Graphs</li>
+                  <li>Dijkstra</li>
+                  <li>Prim-Jarnik</li>
+                  <li>Kruskal</li>
+                  <li>Union-Find</li>
+                  <li>JUnit</li>
+                  <li>Jenkins</li>
+                </ul>
+
+                <div class="card__links">
+                  <p class="note">
+                    Repository is private due to course policy. Design details, testing
+                    approach, and implementation walkthrough are available upon request.
+                  </p>
+                </div>
               </article>
             </div>
-          </div>
         </section>
 
         <section class="section">
@@ -225,9 +253,7 @@
 
             <article class="card education-card">
               <h3>North Carolina State University</h3>
-              <p class="education-subtitle">
-                Computer Science Undergraduate
-              </p>
+              <p class="education-subtitle">Computer Science Undergraduate</p>
               <p>
                 Focused on software development, core CS fundamentals, and
                 building technical projects that can be presented clearly and
