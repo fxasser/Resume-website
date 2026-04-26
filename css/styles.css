@@ -322,10 +322,52 @@ img {
 }
 
 /* ===== Education ===== */
+.education-card {
+  text-align: left;
+}
+
+.education-card h3 {
+  margin-bottom: 0.35rem;
+}
+
 .education-subtitle {
   color: var(--muted);
   font-style: italic;
-  margin-top: -0.1rem;
+  margin: 0 0 0.35rem 0;
+}
+
+.education-meta {
+  margin: 0 0 1rem 0;
+  color: var(--muted);
+}
+
+.education-block {
+  margin-top: 1rem;
+}
+
+.education-block h4 {
+  margin: 0 0 0.65rem 0;
+  font-size: 1.02rem;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.course-tags span {
+  display: inline-block;
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(189, 213, 239, 0.18);
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.education-note {
+  margin-top: 1rem;
 }
 
 /* ===== Responsive ===== */
