@@ -1,46 +1,55 @@
-**Live:** https://fxasser.com
+# Resume-website
+
+Source for my portfolio website, built to present projects, skills, and academic background in a clean employer-facing format.
+
+**Live site:** https://fxasser.com
 
 ## Overview
-Repo for progress on the development of my resume website.
-This website serevs as a clean and digestable platform to share and document any projects, skills, education, and possibly more in an organized professional format.
+
+This website serves as a central place to showcase:
+- featured software and infrastructure projects
+- technical skills and tools
+- academic background and relevant coursework
+
+The site is built as a lightweight custom front end and is hosted on my own infrastructure.
 
 ## Tech Stack
-- HTML 5 + CSS3
-- Light Javascript planned
+- HTML5
+- CSS3
+- JavaScript
 
-## Running Locally
-1. 'git clone https://github.com/fxasser/Resume-website
-2. Open folder in editor
-3. Use **Live Server** extension  
-4. Open http://localhost:8080 in your browser
+## Run Locally
+
+1. Clone the repository:
+   git clone https://github.com/fxasser/Resume-website
+2. Open the folder in your editor
+3. Start a local server (such as the Live Server extension in VS Code)
+4. Open the local address in your browser
 
 ## Folder Structure
 
 .
 ├── index.html
 ├── css/
-│   └── style.css
+│   └── styles.css
+├── js/
+│   └── script.js
 ├── assets/
-│   ├── images/
-│   │   └── cover-photo.png
-│   └── icons/
-│       ├── github.svg
-│       ├── linkedin.svg
-│       ├── envelope-fill.svg
-│       ├── telephone-fill.svg
-│       └── wrench.svg
+│   ├── icons/
+│   │   ├── envelope-fill.svg
+│   │   ├── github.svg
+│   │   └── linkedin.svg
+│   └── images/
+│       └── CoverPhoto.png
 ├── licenses/
 │   └── bootstrap-icons.MIT.txt
 ├── .gitignore
 └── README.md
 
 ## Assets
-Social icons from Bootstrap Icons — MIT license. Local copies in `/assets/icons/`.
-- GitHub: `github.svg`
-- LinkedIn: `linkedin.svg`
-- Email: `envelope-fill.svg`
-- Phone: `telephone-fill.svg`
-- Wrench `wrench.svg`
+Icons are from Bootstrap Icons and are used under the MIT License.
+See /licenses/bootstrap-icons.MIT.txt for the license text.
 
-## Licenses
-- Icons: Bootstrap Icons — MIT (see `/licenses/bootstrap-icons.MIT.txt`)
+## Notes
+
+This site is actively iterated on as my portfolio grows and new projects are added
