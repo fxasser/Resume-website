@@ -28,6 +28,7 @@ The site is built as a lightweight custom front end and is hosted on my own infr
 
 ## Folder Structure
 
+<pre>
 .
 ├── index.html
 ├── css/
@@ -45,6 +46,7 @@ The site is built as a lightweight custom front end and is hosted on my own infr
 │   └── bootstrap-icons.MIT.txt
 ├── .gitignore
 └── README.md
+</pre>
 
 ## Assets
 Icons are from Bootstrap Icons and are used under the MIT License.
