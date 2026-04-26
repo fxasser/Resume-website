@@ -411,3 +411,16 @@ img {
     height: 170px;
   }
 }
+
+/* ===== Subpage Hero ===== */
+.hero--subpage {
+  padding-bottom: 1.2rem;
+}
+
+.subpage-backlink {
+  margin-top: 1rem;
+}
+
+.subpage-backlink a {
+  font-weight: 600;
+}

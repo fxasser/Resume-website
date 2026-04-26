@@ -3,27 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yasser Mohamed | Portfolio</title>
+    <title>Projects | Yasser Mohamed</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/script.js" defer></script>
   </head>
   <body>
     <div class="page-shell">
-      <header class="hero">
+      <header class="hero hero--subpage">
         <div class="hero__content">
-          <img
-            class="hero__photo"
-            src="assets/images/CoverPhoto.png"
-            alt="Portrait of Yasser Mohamed"
-            width="200"
-            height="200"
-          />
-
-          <h1>Yasser Mohamed</h1>
-
+          <h1>Projects</h1>
           <p class="hero__tagline">
-            Computer Science undergraduate focused on Java, backend
-            development, and polished technical projects with real deployment.
+            A broader look at my software, infrastructure, and technical build
+            work.
           </p>
 
           <div class="icons" aria-label="Social links">
@@ -64,32 +55,21 @@
               />
             </a>
           </div>
+
+          <p class="subpage-backlink">
+            <a href="index.html">← Back to home</a>
+          </p>
         </div>
       </header>
 
       <main class="main-content">
-        <section class="section intro">
-          <div class="section__inner narrow">
-            <hr class="section-rule" />
-            <p class="intro-text">
-              Welcome! I’m Yasser, a computer science student who enjoys
-              building projects that feel both technically solid and polished to
-              use.
-            </p>
-            <hr class="section-rule" />
-          </div>
-        </section>
-
         <section class="section">
           <div class="section__inner">
             <div class="section-heading">
-              <h2>Featured Projects</h2>
+              <h2>Live Demos &amp; Hosted Projects</h2>
               <p>
-                Projects that best reflect how I build, present, and deploy
-                software.
-              </p>
-              <p class="section-link">
-                <a href="projects.html">View all projects →</a>
+                Public-facing demos, hosted infrastructure, and other projects
+                with live or accessible deliverables.
               </p>
             </div>
 
@@ -101,10 +81,11 @@
                 </div>
 
                 <p>
-                  Public-facing demo built around an academic access-control compliance
-                  project for electronic medical record workflows. Evaluates user activity
-                  logs against explicit allow/deny policy rules, flags likely violations,
-                  and surfaces warnings when behavior is not clearly authorized.
+                  Public-facing demo built around an academic access-control
+                  compliance project for electronic medical record workflows.
+                  Evaluates user activity logs against explicit allow/deny policy
+                  rules, flags likely violations, and surfaces warnings when
+                  behavior is not clearly authorized.
                 </p>
 
                 <ul class="tag-list" aria-label="Project technologies">
@@ -134,8 +115,10 @@
                     View public frontend repo →
                   </a>
                   <p class="note">
-                    Public demo/frontend is shareable; core coursework implementation remains
-                    private due to course policy.
+                    The demo frontend and hosting layer were built separately so
+                    the project could be shared publicly while the core
+                    coursework implementation remains private due to course
+                    policy.
                   </p>
                 </div>
               </article>
@@ -175,13 +158,59 @@
                     View live site →
                   </a>
                   <p class="note">
-                    This server also powers my portfolio deployment and other
+                    This server powers my portfolio deployment and other
                     self-hosted tools used for development, storage, and network
                     services.
                   </p>
                 </div>
               </article>
 
+              <article class="card project-card">
+                <div class="card__top">
+                  <h3>Resume Website</h3>
+                  <span class="badge">Portfolio</span>
+                </div>
+
+                <p>
+                  Lightweight custom portfolio website designed to present
+                  projects, skills, and academic background in a clean
+                  employer-facing format, hosted on my own infrastructure.
+                </p>
+
+                <ul class="tag-list" aria-label="Project technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>GitHub</li>
+                  <li>Custom Hosting</li>
+                </ul>
+
+                <div class="card__links">
+                  <a href="index.html">View live site →</a>
+                  <a
+                    href="https://github.com/fxasser/Resume-website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View repository →
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__inner">
+            <div class="section-heading">
+              <h2>Academic Projects</h2>
+              <p>
+                Coursework-based software projects with strong engineering
+                value. Private repositories are noted where applicable.
+              </p>
+            </div>
+
+            <div class="card-grid">
               <article class="card project-card">
                 <div class="card__top">
                   <h3>Graph Algorithms &amp; Data Structures Library</h3>
@@ -215,6 +244,36 @@
                   </p>
                 </div>
               </article>
+
+              <article class="card project-card">
+                <div class="card__top">
+                    <h3>WolfReview</h3>
+                    <span class="badge">Academic Project</span>
+                </div>
+
+                <p>
+                    Java conference paper management system built around a finite-state workflow
+                    using the State pattern and command-driven transitions. Includes
+                    validation-heavy business logic, file import/export, and a desktop GUI
+                    backed by a testable model layer.
+                </p>
+
+                <ul class="tag-list" aria-label="Project technologies">
+                    <li>Java</li>
+                    <li>State Pattern</li>
+                    <li>JUnit</li>
+                    <li>File I/O</li>
+                    <li>Swing</li>
+                    <li>GUI</li>
+                </ul>
+
+                <div class="card__links">
+                    <p class="note">
+                    Repository is private due to course policy. Implementation details are
+                    available upon request.
+                    </p>
+                </div>
+                </article>
             </div>
           </div>
         </section>
@@ -222,117 +281,65 @@
         <section class="section">
           <div class="section__inner">
             <div class="section-heading">
-              <h2>Skills</h2>
+              <h2>Other Technical Projects</h2>
               <p>
-                Technologies and tools I use most across software, backend, and
-                self-hosted infrastructure projects.
+                Additional technical work spanning hardware, fabrication, and
+                longer-term creative engineering projects.
               </p>
             </div>
 
-            <div class="card-grid skills-grid">
-              <article class="card skill-card">
-                <h3>Languages</h3>
-                <div class="skill-lines">
-                  <p>Java</p>
-                  <p>C++</p>
-                  <p>JavaScript</p>
-                  <p>HTML / CSS</p>
-                  <p>Python</p>
-                  <p>C</p>
+            <div class="card-grid">
+              <article class="card project-card">
+                <div class="card__top">
+                  <h3>Fully Customized 3D Printer</h3>
+                  <span class="badge">Hardware / Systems</span>
                 </div>
+
+                <p>
+                  Extensively modified and tuned a Creality Ender 3 platform to
+                  print at roughly 300 mm/s while maintaining about ±0.1 mm
+                  dimensional accuracy. Combined mechanical upgrades,
+                  firmware/macro tuning, and iterative calibration to improve
+                  speed, reliability, and repeatability.
+                </p>
+
+                <ul class="tag-list" aria-label="Project technologies">
+                  <li>Klipper</li>
+                  <li>3D Printing</li>
+                  <li>CAD</li>
+                  <li>Hardware Tuning</li>
+                  <li>Automation</li>
+                  <li>Firmware Tuning</li>
+                </ul>
               </article>
 
-              <article class="card skill-card">
-                <h3>Backend &amp; Web</h3>
-                <div class="skill-lines">
-                  <p>Spring Boot</p>
-                  <p>REST APIs</p>
-                  <p>Maven</p>
-                  <p>Frontend UI with HTML/CSS/JavaScript</p>
+              <article class="card project-card">
+                <div class="card__top">
+                  <h3>Combat System Demo</h3>
+                  <span class="badge">In Progress</span>
                 </div>
-              </article>
 
-              <article class="card skill-card">
-                <h3>Infrastructure &amp; DevOps</h3>
-                <div class="skill-lines">
-                  <p>Docker</p>
-                  <p>Ubuntu / Linux</p>
-                  <p>Nginx</p>
-                  <p>HTTPS / TLS</p>
-                  <p>DNS</p>
-                  <p>Reverse Proxy Configuration</p>
-                </div>
-              </article>
+                <p>
+                  Ongoing Unreal Engine 5 project focused on building a polished
+                  third-person combat prototype with custom combat systems,
+                  physics-based effects, and strong gameplay feel.
+                </p>
 
-              <article class="card skill-card">
-                <h3>Testing &amp; Engineering Practices</h3>
-                <div class="skill-lines">
-                  <p>JUnit Testing</p>
-                  <p>Jenkins</p>
-                  <p>Git / GitHub</p>
-                  <p>Static Analysis (PMD, Checkstyle, SpotBugs)</p>
-                  <p>UML Design</p>
-                  <p>Incremental / Iterative Development</p>
-                </div>
-              </article>
+                <ul class="tag-list" aria-label="Project technologies">
+                  <li>Unreal Engine 5</li>
+                  <li>C++</li>
+                  <li>Gameplay Systems</li>
+                  <li>Animation</li>
+                </ul>
 
-              <article class="card skill-card">
-                <h3>Tools &amp; Platforms</h3>
-                <div class="skill-lines">
-                  <p>VS Code</p>
-                  <p>Eclipse</p>
-                  <p>Windows</p>
-                  <p>macOS</p>
-                  <p>Xcode</p>
-                  <p>Unreal Engine 5</p>
-                </div>
-              </article>
-
-              <article class="card skill-card">
-                <h3>Technical Interests</h3>
-                <div class="skill-lines">
-                  <p>Backend Development</p>
-                  <p>DevOps / Deployment</p>
-                  <p>Self-Hosting</p>
-                  <p>Game Development</p>
-                  <p>Automation</p>
-                  <p>3D Printing &amp; Fabrication</p>
+                <div class="card__links">
+                  <p class="note">
+                    Early-stage project currently focused on systems and
+                    gameplay foundations.
+                  </p>
                 </div>
               </article>
             </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section__inner">
-            <div class="section-heading">
-              <h2>Education</h2>
-              <p>Academic background and coursework most relevant to my current projects and interests.</p>
-            </div>
-
-            <article class="card education-card">
-              <h3>North Carolina State University</h3>
-              <p class="education-subtitle">
-                B.S. in Computer Science · Raleigh, NC · Expected May 2027
-              </p>
-
-              <p class="education-meta">
-                GPA: 3.326
-              </p>
-
-              <div class="course-tags" aria-label="Relevant coursework">
-                <span>CSC 216 — Software Development Fundamentals</span>
-                <span>CSC 217 — Software Development Fundamentals Lab</span>
-                <span>CSC 316 — Data Structures and Algorithms</span>
-                <span>CSC 333 — Automata, Grammars, and Computability</span>
-                <span>CSC 230 — C and Software Tools</span>
-                <span>CSC 116 — Introduction to Computing - Java</span>
-              </div>
-
-              <p class="education-note">
-                Coursework in software development, data structures, algorithms, and systems tools has directly informed the design, testing, and deployment of both my academic and personal projects.
-              </p>
-            </article>
           </div>
         </section>
       </main>
