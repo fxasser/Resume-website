@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yasser Mohamed | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+      .hero__actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.9rem;
+      }
+
+      .portfolio-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        padding: 0.55rem 0.95rem;
+        border: 1px solid rgba(189, 213, 239, 0.38);
+        border-radius: 999px;
+        background: rgba(189, 213, 239, 0.12);
+        color: var(--text);
+        font-weight: 600;
+        transition:
+          transform 0.16s ease,
+          border-color 0.16s ease,
+          background 0.16s ease;
+      }
+
+      .portfolio-cta:hover {
+        transform: translateY(-1px);
+        border-color: rgba(189, 213, 239, 0.62);
+        background: rgba(189, 213, 239, 0.18);
+        color: var(--text);
+      }
+
+      .section-link--cta {
+        margin-top: 0.75rem !important;
+      }
+    </style>
     <script src="js/script.js" defer></script>
   </head>
   <body>
@@ -18,14 +54,13 @@
             width="200"
             height="200"
           />
-
           <h1>Yasser Mohamed</h1>
 
           <p class="hero__tagline">
-            Computer Science undergraduate focused on Java, backend
-            development, and polished technical projects with real deployment.
+            Computer Science undergraduate and DevOps intern focused on cloud
+            infrastructure, Linux systems, automation, backend development, and
+            software that runs in real environments.
           </p>
-
           <div class="icons" aria-label="Social links">
             <a href="mailto:fxassermohamed@gmail.com" aria-label="Email">
               <img
@@ -35,7 +70,6 @@
                 height="30"
               />
             </a>
-
             <a
               href="https://github.com/fxasser"
               aria-label="GitHub"
@@ -49,7 +83,6 @@
                 height="30"
               />
             </a>
-
             <a
               href="https://www.linkedin.com/in/fxasser/"
               aria-label="LinkedIn"
@@ -64,6 +97,16 @@
               />
             </a>
           </div>
+          <div class="hero__actions">
+            <a
+              class="portfolio-cta"
+              href="assets/Yasser-Mohamed-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Resume
+            </a>
+          </div>
         </div>
       </header>
 
@@ -72,9 +115,10 @@
           <div class="section__inner narrow">
             <hr class="section-rule" />
             <p class="intro-text">
-              Welcome! I’m Yasser, a computer science student who enjoys
-              building projects that feel both technically solid and polished to
-              use.
+              Welcome! I’m Yasser, a computer science student and DevOps intern
+              who enjoys building, deploying, and operating software across
+              cloud infrastructure, Linux servers, backend services, and
+              automation projects.
             </p>
             <hr class="section-rule" />
           </div>
@@ -83,41 +127,163 @@
         <section class="section">
           <div class="section__inner">
             <div class="section-heading">
-              <h2>Featured Projects</h2>
+              <h2>Experience</h2>
               <p>
-                Projects that best reflect how I build, present, and deploy
-                software.
-              </p>
-              <p class="section-link">
-                <a href="projects.html">View all projects →</a>
+                Professional work across cloud infrastructure, deployment
+                automation, and internal developer tooling.
               </p>
             </div>
 
             <div class="card-grid">
               <article class="card project-card">
                 <div class="card__top">
-                  <h3>AccessControlManager Demo</h3>
-                  <span class="badge badge--featured">EMR Demo</span>
+                  <h3>Veradigm — DevOps Intern</h3>
+                  <span class="badge badge--featured">May 2026 – Present</span>
                 </div>
-
                 <p>
-                  Public-facing demo built around an academic access-control compliance
-                  project for electronic medical record workflows. Evaluates user activity
-                  logs against explicit allow/deny policy rules, flags likely violations,
-                  and surfaces warnings when behavior is not clearly authorized.
+                  Build and maintain AWS deployment infrastructure using Amazon
+                  EKS, Kubernetes, Terraform, ArgoCD, and GitHub Actions. The
+                  internship began full-time in Summer 2026 and was extended
+                  part-time through May 2027.
                 </p>
+                <ul class="tag-list" aria-label="Internship technologies">
+                  <li>AWS</li>
+                  <li>Amazon EKS</li>
+                  <li>Kubernetes</li>
+                  <li>Terraform</li>
+                  <li>ArgoCD</li>
+                  <li>GitHub Actions</li>
+                  <li>CI/CD</li>
+                  <li>REST APIs</li>
+                </ul>
+                <div class="card__links">
+                  <p class="note">
+                    Stood up and operate a dedicated EKS cluster for development
+                    and testing; reworked a deploy-to-development workflow so
+                    runner changes can reach dev/test environments without an
+                    unnecessary pull request while production remains
+                    review-gated.
+                  </p>
+                  <p class="note">
+                    Also develop integrations against Veradigm’s internal
+                    generative-AI assistant API, including team-chat tooling
+                    that brings the assistant into engineers’ daily workflow.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
 
+        <section class="section">
+          <div class="section__inner">
+            <div class="section-heading">
+              <h2>Featured Projects</h2>
+              <p>
+                Projects most relevant to cloud, systems, infrastructure,
+                backend, and software engineering roles.
+              </p>
+              <p class="section-link section-link--cta">
+                <a class="portfolio-cta" href="projects.html">
+                  View All Projects →
+                </a>
+              </p>
+            </div>
+
+            <div class="card-grid">
+              <article class="card project-card">
+                <div class="card__top">
+                  <h3>Home Server &amp; Self-Hosted Infrastructure</h3>
+                  <span class="badge badge--featured">Infrastructure</span>
+                </div>
+                <p>
+                  Built and administer a bare-metal Ubuntu server running 10+
+                  containerized services and custom web applications. Operate
+                  storage, databases, monitoring, DNS, reverse proxies, VPN
+                  access, backups, and TLS-secured deployments while
+                  troubleshooting failures across the application, container,
+                  host, and network layers.
+                </p>
+                <ul class="tag-list" aria-label="Project technologies">
+                  <li>Ubuntu</li>
+                  <li>Docker Compose</li>
+                  <li>Nginx</li>
+                  <li>PostgreSQL</li>
+                  <li>Redis</li>
+                  <li>Tailscale</li>
+                  <li>DNS</li>
+                  <li>TLS / HTTPS</li>
+                  <li>Jenkins</li>
+                  <li>Uptime Kuma</li>
+                </ul>
+                <div class="card__links">
+                  <a
+                    href="https://fxasser.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View live portfolio →
+                  </a>
+                  <p class="note">
+                    Services include Immich, Nextcloud, Pi-hole, Jenkins,
+                    code-server, Uptime Kuma, and custom applications. Recovery
+                    and operations work has included GRUB, fstab/mount,
+                    reverse-proxy, DNS, and post-power-loss failures plus
+                    automated rsync/cron and Timeshift backups.
+                  </p>
+                </div>
+              </article>
+
+              <article class="card project-card">
+                <div class="card__top">
+                  <h3>Discord Community Automation Bots</h3>
+                  <span class="badge">Python Automation</span>
+                </div>
+                <p>
+                  Built and self-host two event-driven Discord bots that run
+                  24/7 in Docker. One automates onboarding, role assignment,
+                  introduction validation, access gating, and admin commands;
+                  the other tracks voice sessions and notifies opted-in members
+                  using timing and cooldown logic.
+                </p>
+                <ul class="tag-list" aria-label="Project technologies">
+                  <li>Python</li>
+                  <li>asyncio</li>
+                  <li>Discord API</li>
+                  <li>Docker</li>
+                  <li>Linux</li>
+                  <li>Event-Driven</li>
+                  <li>Slash Commands</li>
+                </ul>
+                <div class="card__links">
+                  <p class="note">
+                    Designed for persistent operation on my homelab with
+                    session tracking, backfill/admin tooling, cooldowns, and
+                    containerized deployment.
+                  </p>
+                </div>
+              </article>
+
+              <article class="card project-card">
+                <div class="card__top">
+                  <h3>AccessControlManager Demo</h3>
+                  <span class="badge">Backend / API</span>
+                </div>
+                <p>
+                  Built a Spring Boot REST API for compliance report generation
+                  over validated preset CSV datasets, with a public frontend
+                  that demonstrates access-control analysis while keeping
+                  course implementation details private.
+                </p>
                 <ul class="tag-list" aria-label="Project technologies">
                   <li>Java</li>
                   <li>Spring Boot</li>
                   <li>REST API</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
+                  <li>Maven</li>
                   <li>JavaScript</li>
                   <li>Nginx</li>
                   <li>HTTPS</li>
                 </ul>
-
                 <div class="card__links">
                   <a
                     href="https://accesscontrolmanager.fxasser.com/"
@@ -134,84 +300,44 @@
                     View public frontend repo →
                   </a>
                   <p class="note">
-                    Public demo/frontend is shareable; core coursework implementation remains
-                    private due to course policy.
+                    Deployed the UI and API behind one HTTPS subdomain using
+                    Nginx path routing, with the frontend at / and backend
+                    requests routed through /api.
                   </p>
                 </div>
               </article>
 
               <article class="card project-card">
                 <div class="card__top">
-                  <h3>Home Server &amp; Self-Hosted Infrastructure</h3>
-                  <span class="badge">Infrastructure</span>
+                  <h3>MAYDAY</h3>
+                  <span class="badge">Game / Web Deployment</span>
                 </div>
-
                 <p>
-                  Built and maintain an Ubuntu home server environment for
-                  hosting and managing multiple services. Configured reverse
-                  proxies, HTTPS, DNS, firewall rules, and containerized
-                  deployments for tools including Immich, Pi-hole, and VS Code
-                  Server while supporting reliable remote development and
-                  troubleshooting infrastructure issues.
+                  Developed a branching browser-based horror game in Twine with
+                  hidden state variables driving multiple story paths and
+                  endings, then packaged and deployed the production build on
+                  my Linux homelab.
                 </p>
-
                 <ul class="tag-list" aria-label="Project technologies">
-                  <li>Ubuntu</li>
+                  <li>Twine</li>
+                  <li>Twee</li>
+                  <li>HTML</li>
                   <li>Docker</li>
                   <li>Nginx</li>
-                  <li>TLS / HTTPS</li>
-                  <li>DNS</li>
-                  <li>Pi-hole</li>
-                  <li>Immich</li>
-                  <li>VS Code Server</li>
+                  <li>Linux</li>
                 </ul>
-
                 <div class="card__links">
                   <a
-                    href="https://fxasser.com"
+                    href="https://mayday.fxasser.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View live site →
+                    Play MAYDAY →
                   </a>
                   <p class="note">
-                    This server also powers my portfolio deployment and other
-                    self-hosted tools used for development, storage, and network
-                    services.
-                  </p>
-                </div>
-              </article>
-
-              <article class="card project-card">
-                <div class="card__top">
-                  <h3>Graph Algorithms &amp; Data Structures Library</h3>
-                  <span class="badge">Java Library</span>
-                </div>
-
-                <p>
-                  Built a cohesive Java DS&amp;A toolkit from scratch over a full
-                  semester, culminating in reusable graph analysis utilities
-                  including DFS, BFS, Dijkstra shortest paths, and minimum
-                  spanning tree algorithms powered by custom underlying data
-                  structures.
-                </p>
-
-                <ul class="tag-list" aria-label="Project technologies">
-                  <li>Java</li>
-                  <li>Graphs</li>
-                  <li>Dijkstra</li>
-                  <li>Prim-Jarnik</li>
-                  <li>Kruskal</li>
-                  <li>Union-Find</li>
-                  <li>JUnit</li>
-                  <li>Jenkins</li>
-                </ul>
-
-                <div class="card__links">
-                  <p class="note">
-                    Repository is private due to course policy. Design details,
-                    testing approach, and implementation walkthrough are
-                    available upon request.
+                    Containerized with nginx:alpine and served through the same
+                    self-managed web infrastructure used for my other deployed
+                    projects.
                   </p>
                 </div>
               </article>
@@ -224,8 +350,8 @@
             <div class="section-heading">
               <h2>Skills</h2>
               <p>
-                Technologies and tools I use most across software, backend, and
-                self-hosted infrastructure projects.
+                Technologies I use across professional DevOps work, systems
+                projects, backend development, and self-hosted infrastructure.
               </p>
             </div>
 
@@ -233,70 +359,76 @@
               <article class="card skill-card">
                 <h3>Languages</h3>
                 <div class="skill-lines">
-                  <p>Java</p>
+                  <p>C</p>
                   <p>C++</p>
+                  <p>Java</p>
+                  <p>Python</p>
+                  <p>Bash</p>
                   <p>JavaScript</p>
                   <p>HTML / CSS</p>
-                  <p>Python</p>
-                  <p>C</p>
                 </div>
               </article>
 
               <article class="card skill-card">
-                <h3>Backend &amp; Web</h3>
+                <h3>Cloud &amp; DevOps</h3>
+                <div class="skill-lines">
+                  <p>AWS / Amazon EKS</p>
+                  <p>Kubernetes</p>
+                  <p>Terraform</p>
+                  <p>ArgoCD / GitOps</p>
+                  <p>GitHub Actions / CI/CD</p>
+                  <p>Docker / Docker Compose</p>
+                  <p>Jenkins</p>
+                </div>
+              </article>
+
+              <article class="card skill-card">
+                <h3>Linux &amp; Networking</h3>
+                <div class="skill-lines">
+                  <p>Ubuntu / Linux Administration</p>
+                  <p>Nginx / Reverse Proxies</p>
+                  <p>DNS</p>
+                  <p>TLS / HTTPS</p>
+                  <p>Tailscale / VPN</p>
+                  <p>UFW / SSH</p>
+                  <p>cron / rsync</p>
+                </div>
+              </article>
+
+              <article class="card skill-card">
+                <h3>Backend &amp; Services</h3>
                 <div class="skill-lines">
                   <p>Spring Boot</p>
                   <p>REST APIs</p>
                   <p>Maven</p>
-                  <p>Frontend UI with HTML/CSS/JavaScript</p>
-                </div>
-              </article>
-
-              <article class="card skill-card">
-                <h3>Infrastructure &amp; DevOps</h3>
-                <div class="skill-lines">
-                  <p>Docker</p>
-                  <p>Ubuntu / Linux</p>
-                  <p>Nginx</p>
-                  <p>HTTPS / TLS</p>
-                  <p>DNS</p>
-                  <p>Reverse Proxy Configuration</p>
+                  <p>PostgreSQL</p>
+                  <p>Redis</p>
+                  <p>API Integration</p>
                 </div>
               </article>
 
               <article class="card skill-card">
                 <h3>Testing &amp; Engineering Practices</h3>
                 <div class="skill-lines">
-                  <p>JUnit Testing</p>
-                  <p>Jenkins</p>
                   <p>Git / GitHub</p>
+                  <p>JUnit &amp; Mutation Testing</p>
                   <p>Static Analysis (PMD, Checkstyle, SpotBugs)</p>
                   <p>UML Design</p>
+                  <p>Agile / Jira</p>
                   <p>Incremental / Iterative Development</p>
-                </div>
-              </article>
-
-              <article class="card skill-card">
-                <h3>Tools &amp; Platforms</h3>
-                <div class="skill-lines">
-                  <p>VS Code</p>
-                  <p>Eclipse</p>
-                  <p>Windows</p>
-                  <p>macOS</p>
-                  <p>Xcode</p>
-                  <p>Unreal Engine 5</p>
                 </div>
               </article>
 
               <article class="card skill-card">
                 <h3>Technical Interests</h3>
                 <div class="skill-lines">
+                  <p>Cloud / Platform Engineering</p>
+                  <p>DevOps / SRE</p>
+                  <p>Linux &amp; Systems Software</p>
                   <p>Backend Development</p>
-                  <p>DevOps / Deployment</p>
-                  <p>Self-Hosting</p>
-                  <p>Game Development</p>
                   <p>Automation</p>
-                  <p>3D Printing &amp; Fabrication</p>
+                  <p>Embedded Systems</p>
+                  <p>Game Development</p>
                 </div>
               </article>
             </div>
@@ -307,7 +439,10 @@
           <div class="section__inner">
             <div class="section-heading">
               <h2>Education</h2>
-              <p>Academic background and coursework most relevant to my current projects and interests.</p>
+              <p>
+                Academic background and coursework most relevant to systems,
+                software engineering, and infrastructure.
+              </p>
             </div>
 
             <article class="card education-card">
@@ -317,20 +452,23 @@
               </p>
 
               <p class="education-meta">
-                GPA: 3.326
+                GPA: 3.33
               </p>
 
               <div class="course-tags" aria-label="Relevant coursework">
-                <span>CSC 216 — Software Development Fundamentals</span>
-                <span>CSC 217 — Software Development Fundamentals Lab</span>
+                <span>CSC 246 — Operating Systems (in progress)</span>
+                <span>CSC 230 — C and Software Tools</span>
                 <span>CSC 316 — Data Structures and Algorithms</span>
                 <span>CSC 333 — Automata, Grammars, and Computability</span>
-                <span>CSC 230 — C and Software Tools</span>
-                <span>CSC 116 — Introduction to Computing - Java</span>
+                <span>CSC 216/217 — Software Development</span>
+                <span>CSC 251 — Python</span>
               </div>
 
               <p class="education-note">
-                Coursework in software development, data structures, algorithms, and systems tools has directly informed the design, testing, and deployment of both my academic and personal projects.
+                Coursework in operating systems, C, software development, data
+                structures, and algorithms complements hands-on professional
+                and homelab experience with Linux, containers, cloud
+                infrastructure, deployment automation, and backend services.
               </p>
             </article>
           </div>

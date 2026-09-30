@@ -76,24 +76,69 @@
             <div class="card-grid">
               <article class="card project-card">
                 <div class="card__top">
-                  <h3>AccessControlManager Demo</h3>
-                  <span class="badge badge--featured">EMR Demo</span>
+                  <h3>Home Server &amp; Self-Hosted Infrastructure</h3>
+                  <span class="badge badge--featured">Infrastructure</span>
                 </div>
 
                 <p>
-                  Public-facing demo built around an academic access-control
-                  compliance project for electronic medical record workflows.
-                  Evaluates user activity logs against explicit allow/deny policy
-                  rules, flags likely violations, and surfaces warnings when
-                  behavior is not clearly authorized.
+                  Built and administer a bare-metal Ubuntu server running 10+
+                  containerized services and custom web applications. Operate
+                  storage, databases, monitoring, DNS, reverse proxies, VPN
+                  access, backups, and TLS-secured deployments while
+                  troubleshooting failures across the application, container,
+                  host, and network layers.
+                </p>
+
+                <ul class="tag-list" aria-label="Project technologies">
+                  <li>Ubuntu</li>
+                  <li>Docker Compose</li>
+                  <li>Nginx</li>
+                  <li>PostgreSQL</li>
+                  <li>Redis</li>
+                  <li>Tailscale</li>
+                  <li>DNS</li>
+                  <li>TLS / HTTPS</li>
+                  <li>Jenkins</li>
+                  <li>Uptime Kuma</li>
+                </ul>
+
+                <div class="card__links">
+                  <a
+                    href="https://fxasser.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View live portfolio →
+                  </a>
+
+                  <p class="note">
+                    Services include Immich, Nextcloud, Pi-hole, Jenkins,
+                    code-server, Uptime Kuma, and custom applications. Recovery
+                    and operations work has included GRUB, fstab/mount,
+                    reverse-proxy, DNS, and post-power-loss failures plus
+                    automated rsync/cron and Timeshift backups.
+                  </p>
+                </div>
+              </article>
+
+              <article class="card project-card">
+                <div class="card__top">
+                  <h3>AccessControlManager Demo</h3>
+                  <span class="badge">Backend / API</span>
+                </div>
+
+                <p>
+                  Built a Spring Boot REST API for compliance report generation
+                  over validated preset CSV datasets, with a public frontend
+                  that demonstrates access-control analysis while keeping
+                  course implementation details private.
                 </p>
 
                 <ul class="tag-list" aria-label="Project technologies">
                   <li>Java</li>
                   <li>Spring Boot</li>
                   <li>REST API</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
+                  <li>Maven</li>
                   <li>JavaScript</li>
                   <li>Nginx</li>
                   <li>HTTPS</li>
@@ -107,6 +152,7 @@
                   >
                     View live demo →
                   </a>
+
                   <a
                     href="https://github.com/fxasser/accesscontrolmanager-demo-frontend"
                     target="_blank"
@@ -114,53 +160,44 @@
                   >
                     View public frontend repo →
                   </a>
+
                   <p class="note">
-                    The demo frontend and hosting layer were built separately so
-                    the project could be shared publicly while the core
-                    coursework implementation remains private due to course
-                    policy.
+                    Deployed the UI and API behind one HTTPS subdomain using
+                    Nginx path routing, with the frontend at / and backend
+                    requests routed through /api.
                   </p>
                 </div>
               </article>
 
               <article class="card project-card">
                 <div class="card__top">
-                  <h3>Home Server &amp; Self-Hosted Infrastructure</h3>
-                  <span class="badge">Infrastructure</span>
+                  <h3>Discord Community Automation Bots</h3>
+                  <span class="badge">Python Automation</span>
                 </div>
 
                 <p>
-                  Built and maintain an Ubuntu home server environment for
-                  hosting and managing multiple services. Configured reverse
-                  proxies, HTTPS, DNS, firewall rules, and containerized
-                  deployments for tools including Immich, Pi-hole, and VS Code
-                  Server while supporting reliable remote development and
-                  troubleshooting infrastructure issues.
+                  Built and self-host two event-driven Discord bots that run
+                  continuously in Docker. One automates onboarding, role
+                  assignment, introduction validation, access gating, and
+                  administrative commands; the other tracks voice sessions and
+                  notifies opted-in members using timing and cooldown logic.
                 </p>
 
                 <ul class="tag-list" aria-label="Project technologies">
-                  <li>Ubuntu</li>
+                  <li>Python</li>
+                  <li>asyncio</li>
+                  <li>Discord API</li>
                   <li>Docker</li>
-                  <li>Nginx</li>
-                  <li>TLS / HTTPS</li>
-                  <li>DNS</li>
-                  <li>Pi-hole</li>
-                  <li>Immich</li>
-                  <li>VS Code Server</li>
+                  <li>Linux</li>
+                  <li>Event-Driven</li>
+                  <li>Slash Commands</li>
                 </ul>
 
                 <div class="card__links">
-                  <a
-                    href="https://fxasser.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View live site →
-                  </a>
                   <p class="note">
-                    This server powers my portfolio deployment and other
-                    self-hosted tools used for development, storage, and network
-                    services.
+                    Designed for persistent operation on my homelab with
+                    session tracking, backfill/admin tooling, cooldowns, and
+                    containerized deployment.
                   </p>
                 </div>
               </article>
@@ -187,6 +224,7 @@
 
                 <div class="card__links">
                   <a href="index.html">View live site →</a>
+
                   <a
                     href="https://github.com/fxasser/Resume-website"
                     target="_blank"
@@ -206,11 +244,54 @@
               <h2>Academic Projects</h2>
               <p>
                 Coursework-based software projects with strong engineering
-                value. Private repositories are noted where applicable.
+                value, including projects I continued developing or deploying
+                independently outside the assignment.
               </p>
             </div>
 
             <div class="card-grid">
+              <article class="card project-card">
+                <div class="card__top">
+                  <h3>MAYDAY</h3>
+                  <span class="badge badge--featured">
+                    Academic + Self-Hosted
+                  </span>
+                </div>
+
+                <p>
+                  Developed a branching browser-based horror game in Twine with
+                  hidden state variables driving multiple story paths and
+                  endings as part of a course project. After the assignment, I
+                  independently containerized and deployed the game on my Linux
+                  homelab.
+                </p>
+
+                <ul class="tag-list" aria-label="Project technologies">
+                  <li>Twine</li>
+                  <li>Twee</li>
+                  <li>HTML</li>
+                  <li>Docker</li>
+                  <li>Nginx</li>
+                  <li>Linux</li>
+                </ul>
+
+                <div class="card__links">
+                  <a
+                    href="https://mayday.fxasser.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Play MAYDAY →
+                  </a>
+
+                  <p class="note">
+                    The game itself was built for coursework; the Docker/Nginx
+                    deployment and self-hosting were completed independently
+                    afterward.
+                  </p>
+                </div>
+              </article>
+
               <article class="card project-card">
                 <div class="card__top">
                   <h3>Graph Algorithms &amp; Data Structures Library</h3>
@@ -218,11 +299,11 @@
                 </div>
 
                 <p>
-                  Built a cohesive Java DS&amp;A toolkit from scratch over a full
-                  semester, culminating in reusable graph analysis utilities
-                  including DFS, BFS, Dijkstra shortest paths, and minimum
-                  spanning tree algorithms powered by custom underlying data
-                  structures.
+                  Built a cohesive Java data structures and algorithms toolkit
+                  from scratch over a full semester, culminating in reusable
+                  graph analysis utilities including DFS, BFS, Dijkstra
+                  shortest paths, and minimum spanning tree algorithms powered
+                  by custom underlying data structures.
                 </p>
 
                 <ul class="tag-list" aria-label="Project technologies">
@@ -247,33 +328,34 @@
 
               <article class="card project-card">
                 <div class="card__top">
-                    <h3>WolfReview</h3>
-                    <span class="badge">Academic Project</span>
+                  <h3>WolfReview</h3>
+                  <span class="badge">Academic Project</span>
                 </div>
 
                 <p>
-                    Java conference paper management system built around a finite-state workflow
-                    using the State pattern and command-driven transitions. Includes
-                    validation-heavy business logic, file import/export, and a desktop GUI
-                    backed by a testable model layer.
+                  Java conference paper management system built around a
+                  finite-state workflow using the State pattern and
+                  command-driven transitions. Includes validation-heavy
+                  business logic, file import/export, and a desktop GUI backed
+                  by a testable model layer.
                 </p>
 
                 <ul class="tag-list" aria-label="Project technologies">
-                    <li>Java</li>
-                    <li>State Pattern</li>
-                    <li>JUnit</li>
-                    <li>File I/O</li>
-                    <li>Swing</li>
-                    <li>GUI</li>
+                  <li>Java</li>
+                  <li>State Pattern</li>
+                  <li>JUnit</li>
+                  <li>File I/O</li>
+                  <li>Swing</li>
+                  <li>GUI</li>
                 </ul>
 
                 <div class="card__links">
-                    <p class="note">
-                    Repository is private due to course policy. Implementation details are
-                    available upon request.
-                    </p>
+                  <p class="note">
+                    Repository is private due to course policy. Implementation
+                    details are available upon request.
+                  </p>
                 </div>
-                </article>
+              </article>
             </div>
           </div>
         </section>
@@ -297,7 +379,7 @@
 
                 <p>
                   Extensively modified and tuned a Creality Ender 3 platform to
-                  print at roughly 300 mm/s while maintaining about ±0.1 mm
+                  print at roughly 300–350 mm/s while maintaining about ±0.1 mm
                   dimensional accuracy. Combined mechanical upgrades,
                   firmware/macro tuning, and iterative calibration to improve
                   speed, reliability, and repeatability.
